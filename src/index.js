@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import logo from "./react-logo.png";
+import App from "./App";
+import "./index.css";
 
 const page = (
   <div>
-    <img src={logo} alt="logo" width="40px" />
     <h1>Fun facts about React</h1>
     <ul>
       <li>Was first released in 2013</li>
@@ -18,4 +18,4 @@ const page = (
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(page);
+root.render(<App />);
